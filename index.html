@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trisa Paul Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* NAVIGATION */
+.navbar .nav-link {
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffbd39;
+}
+
+.navbar .nav-link.active {
+  color: #ffbd39;
+  font-weight: 600;
+}
+
+	/* ABOUT */
+.about-mf .box-shadow-full {
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+margin-left: 10px;
+}
+
+/* HERO FIX */
+.hero { padding-top: 120px; }
+.hero .text { max-width: 600px; }
+.hero-buttons a { margin-right: 12px; }
+.cred-line { color: #ffbd39; font-weight: 600; }
+
+/* SECTION SPACING */
+section { padding: 80px 0; }
+
+/* PROJECT CARDS */
+.project-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+.project-card:hover { transform: translateY(-6px); }
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-tags span {
+  background: #333;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.project-link {
+  margin-right: 15px;
+  color: #ffbd39;
+  text-decoration: none;
+}
+
+.project-link:last-child {
+  margin-right: 0;
+}
+
+/* RESUME PREVIEW */
+.resume-preview {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* CLEAN CONTACT */
+.contact-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Animation styles */
+#typing-animation {
+position: relative;
+font-size: 30px;
+font-weight: bold;
+color: rgb(255, 255, 255);
+overflow: hidden;
+white-space: nowrap;
+animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+content: "";
+/* position: absolute; */
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background-color: #ccc;
+animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+from {
+width: 0;
+}
+to {
+width: 100%;
+}
+}
+
+@keyframes typing-cursor {
+from {
+width: 5px;
+}
+to {
+width: 0;
+}
+}
+
+/* project image zoom effect */
+.zoom-effect {
+overflow: hidden;
+transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+transform: scale(1.1);
+}
+
+/* contact */
+.contact-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h4 {
+  color: #ffbd39;
+  margin-bottom: 10px;
+}
+
+.contact-card p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-card p a:hover {
+  color: #ffbd39;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-link:hover {
+  color: #ffbd39;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">Trisa Paul Malayampuram</a>
+
+    <!-- MOBILE TOGGLE -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#home-section">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about-section">About</a>
+        </li>
+
+        <li class="nav-item">
+          <!-- FIXED -->
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#project-section">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home-section" class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <div class="text">
+          <h1>Trisa Paul Malayampuram</h1>
+
+          <p class="cred-line">
+            Sales → Analytics | Business-first thinking
+          </p>
+
+          <h2>
+            Data Analyst focused on revenue, customer behavior, and business growth
+          </h2>
+
+          <p>
+            I combine 3+ years of sales experience with data analysis to uncover insights that improve business performance.
+            Skilled in SQL, Python, and Power BI for solving real-world business problems.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#project-section" class="btn btn-primary">Explore My Work</a>
+            <a href="assets/Trisa_Paul_Resume.pdf" class="btn btn-outline-light">Download Resume</a>
+          </div>
+
+          <p class="mt-3">
+            <a href="https://www.linkedin.com/in/trisampaulmba/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/TPaul-BA" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img src="images/bg_1.png" class="img-fluid">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about-section">
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <!-- IMAGE -->
+      <div class="col-md-5 text-center mb-4">
+        <img src="images/about-me.png" class="img-fluid rounded" style="max-width:300px;">
+      </div>
+
+      <!-- CONTENT -->
+      <div class="col-md-7">
+
+        <h2>About Me</h2>
+
+        <p>
+          I’m a Data Analyst transitioning from a sales background, bringing 3+ years of experience in revenue-driven roles.
+          I focus on analyzing customer behavior, sales performance, and business trends to support data-driven decision making.
+        </p>
+
+        <p>
+          My strength lies in combining business understanding with analytical skills using SQL, Python, Power BI, and Tableau
+          to uncover insights that directly impact growth and strategy.
+        </p>
+
+        <!-- KEY INFO -->
+        <div class="about-tags mt-3">
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>EDA</span>
+          <span>Business Analysis</span>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-4">
+          <a href="#project-section" class="btn btn-primary mr-2">View Projects</a>
+          <a href="resume.html" class="btn btn-outline-light">View Resume</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- RESUME PREVIEW -->
+<section id="resume-section">
+  <div class="container text-center">
+    <h2>Experience Snapshot</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-preview">
+          <h4>MIS & Market Research Analyst</h4>
+          <p>Analyzed sales data and automated reporting workflows.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="resume-preview">
+          <h4>Business Analyst Intern</h4>
+          <p>Built dashboards and generated business insights.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="resume.html" class="btn btn-primary mt-4">View Full Resume</a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="project-section">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+
+    <!-- PROJECT 1 -->    
+<div class="project-card">
+
+<img src="images/projects/ride-hailing.png" class="project-img" alt="Ride Hailing Analysis">      
+
+<h3>Ride-Hailing Demand Analysis</h3>      
+
+<p><strong>Problem:</strong> Ride-hailing platforms struggle to align driver supply with fluctuating demand, leading to missed revenue and poor customer experience.</p>
+<p><strong>Insight:</strong> Demand follows a bimodal pattern (6–9 AM, 4–8 PM) with extended spikes on Fridays, while pickup density is heavily concentrated in central NYC.</p>
+<p><strong>Impact:</strong> Proposed pre-peak driver allocation, zone-based redistribution, and surge strategies to improve fulfillment and revenue efficiency.</p>
+
+<div class="project-tags">
+<span>Python</span>        
+<span>EDA</span>        
+<span>Visualization</span>      
+</div>
+
+<div class="project-links">        
+<a href="projects/ride-hailing.html">View Case Study</a>        
+<a href="https://github.com/TPaul-BA/ride-hailing-demand-analysis/blob/main/notebooks/eda.ipynb" target="_blank">GitHub</a>
+</div>    
+</div>    
+
+
+<!-- PROJECT 2 -->    
+<div class="project-card">      
+
+<img src="images/projects/netflix-content.png" class="project-img" alt="Netflix Content Analysis">
+
+<h3>Netflix Content Analysis</h3>      
+<p><strong>Problem:</strong> Analyze content trends and viewer preferences.</p>      
+<p><strong>Insight:</strong> Found dominant genres and release trends across regions.</p>      
+<p><strong>Impact:</strong> Highlighted opportunities for content strategy alignment.</p>      
+
+<div class="project-tags">        
+<span>Python</span>        
+<span>Pandas</span>
+<span>Power BI</span>
+</div>
+
+<div class="project-links">        
+<a href="projects/netflix.html">View Case Study</a>        
+<a href="https://github.com/TPaul-BA/netflix-content-analysis/blob/main/notebooks/02_analysis.ipynb" target="_blank">GitHub</a>      
+</div>    
+</div>
+
+
+<!-- PROJECT 3 -->    
+<div class="project-card">      
+
+<img src="images/projects/retail-sales.png" class="project-img" alt="Retail Sales SQL Analysis">
+
+<h3>Retail Sales SQL Analysis</h3>      
+<p><strong>Problem:</strong> Understand sales performance, customer behavior, and operational trends from transactional retail data to support better business decisions.</p>      
+<p><strong>Insight:</strong> Identified high-performing product categories, peak sales periods, and a concentration of revenue among a small segment of customers.</p>      
+<p><strong>Impact:</strong> Enabled data-driven decisions for inventory planning, customer targeting, and optimizing operations based on peak sales timings.</p>      
+
+<div class="project-tags">        
+<span>SQL</span>        
+<span>Data Analysis</span>      
+</div>      
+
+<div class="project-links">        
+<a href="projects/retail-sql.html">View Case Study</a>        
+<a href="https://github.com/TPaul-BA/Retail_sales_sql_p1/blob/main/SQL%20Retail%20Sales%20Analysis.sql" target="_blank">GitHub</a>      
+</div>    
+</div>
+</section>
+
+<!-- CONTACT -->
+<!-- CONTACT -->
+<section id="contact-section" class="ftco-section">
+  <div class="container text-center">
+
+    <!-- HEADING -->
+    <div class="mb-5">
+      <h2>Contact</h2>
+      <p style="color:#aaa; max-width:600px; margin:auto;">
+        Open to data analyst roles, freelance projects, and collaborations.
+        Feel free to reach out.
+      </p>
+    </div>
+
+    <!-- PRIMARY CONTACT CARDS -->
+    <div class="row justify-content-center mb-5">
+
+      <!-- EMAIL -->
+      <div class="col-md-4 mb-4">
+        <div class="contact-card">
+          <h4>Email</h4>
+          <p>
+            <a href="mailto:trisapaulm@hotmail.com">
+              trisapaulm@hotmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- PHONE -->
+      <div class="col-md-4 mb-4">
+        <div class="contact-card">
+          <h4>Phone</h4>
+          <p>
+            <a href="tel:+919645116464">
+              +91 9645116464
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- LOCATION -->
+      <div class="col-md-4 mb-4">
+        <div class="contact-card">
+          <h4>Location</h4>
+          <p>Kerala, India</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MAIN CTA -->
+    <div class="mb-5">
+      <a href="https://forms.gle/TcodVNHJJfbXnqaK6" target="_blank" class="btn btn-primary py-3 px-5">
+        Send a Message
+      </a>
+    </div>
+
+    <!-- SOCIAL PROOF -->
+    <div>
+      <p style="color:#aaa;">Find me on</p>
+
+      <a href="https://www.linkedin.com/in/trisampaulmba/" target="_blank" class="social-link">
+        LinkedIn
+      </a>
+
+      <span style="margin:0 10px;">|</span>
+
+      <a href="https://github.com/TPaul-BA" target="_blank" class="social-link">
+        GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>

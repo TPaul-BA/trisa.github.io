@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Content Analysis | Trisa Paul</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      color: #ffbd39;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .visual-box {
+      background: #1a1a1a;  
+      border: 2px dashed #444;  
+      padding: 10px;  
+      border-radius: 8px;  
+      margin-top: 15px;  
+      text-align: center;
+    }
+
+    .visual-box img {  
+        max-width: 100%;  
+        height: auto;  
+        border-radius: 6px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #333;
+      padding: 6px 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .back {
+      margin-bottom: 20px;
+      display: inline-block;
+      color: #ffbd39;
+      text-decoration: none;
+    }
+
+    .github-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #ffbd39;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <a href="../index.html#project-section" class="back">← Back to Projects</a>
+
+  <h1>Netflix Content Analysis</h1>
+
+  <div class="section">
+    <span class="tag">Python</span>
+    <span class="tag">Pandas</span>
+    <span class="tag">Power BI</span>
+    <span class="tag">EDA</span>
+    <span class="tag">Visualization</span>
+  </div>
+
+  <!-- PROBLEM -->
+  <div class="section">
+    <h2>Problem Statement</h2>
+    <p>
+      Streaming platforms rely heavily on content strategy to drive engagement.
+      The objective of this analysis was to understand <span class="highlight">content distribution, genre trends, and release patterns</span> within Netflix data.
+    </p>
+  </div>
+
+  <!-- DATASET -->
+  <div class="section">
+    <h2>Dataset</h2>
+    <p>
+      The dataset contains information about Netflix titles including type, genre, country, release year, and duration.
+      It was cleaned and preprocessed to ensure consistency and usability for analysis.
+    </p>
+  </div>
+
+  <!-- APPROACH -->
+  <div class="section">
+    <h2>Approach</h2>
+    <p>
+      - Performed data cleaning and preprocessing using Python (Pandas) <br>
+      - Conducted exploratory data analysis to identify patterns <br>
+      - Created visualizations to interpret trends in content distribution <br>
+    </p>
+  </div>
+
+  <!-- VISUAL 1 -->
+  <div class="section">
+    <h2>Content Type Distribution</h2>
+    <p>Comparison of Movies vs TV Shows on Netflix.</p>
+    <div class="visual-box">
+        <img src="../images/projects/netflix-content/content-type-distribution.png" alt="Content Type Distribution">
+    </div>
+  </div> 
+
+  <!-- VISUAL 2 -->
+  <div class="section">
+    <h2>Genre Trends</h2>
+    <p>Identifying the most dominant genres across the platform.</p>
+    <div class="visual-box">
+        <img src="../images/projects/netflix-content/genre-trends.png" alt="Genre Trends">
+    </div>
+  </div>
+
+  <!-- VISUAL 3 -->
+  <div class="section">
+    <h2>Release Trends Over Time</h2>
+    <p>Understanding how content production has evolved.</p>
+    <div class="visual-box">
+        <img src="../images/projects/netflix-content/release-trends.png" alt="Release Trends Over Time">
+    </div>
+  </div>
+
+  <!-- INSIGHTS -->
+  <div class="section">
+    <h2>Key Insights</h2>
+    <p>
+      - Movies dominate the platform compared to TV Shows <br>
+      - Certain genres consistently outperform others in volume <br>
+      - Significant increase in content production post-2015 <br>
+    </p>
+  </div>
+
+  <!-- BUSINESS IMPACT -->
+  <div class="section">
+    <h2>Business Implications</h2>
+    <p>
+      The findings highlight opportunities for optimizing content strategy by focusing on high-performing genres and balancing content types.
+      Understanding release trends can also guide future investment decisions.
+    </p>
+  </div>
+
+  <!-- GITHUB -->
+  <a href="https://github.com/TPaul-BA/netflix-content-analysis/blob/main/notebooks/02_analysis.ipynb" target="_blank" class="github-btn">
+    View Full Code on GitHub
+  </a>
+
+</div>
+
+</body>
+</html>

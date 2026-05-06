@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ride-Hailing Demand Analysis | Trisa Paul</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      color: #ffbd39;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .visual-box {
+      background: #1a1a1a;
+      border: 2px dashed #444;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .visual-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #333;
+      padding: 6px 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .back {
+      margin-bottom: 20px;
+      display: inline-block;
+      color: #ffbd39;
+      text-decoration: none;
+    }
+
+    .github-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #ffbd39;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <a href="../index.html#project-section" class="back">← Back to Projects</a>
+
+  <h1>Ride-Hailing Demand Optimization Analysis</h1>
+
+  <div class="section">
+    <span class="tag">Python</span>
+    <span class="tag">EDA</span>
+    <span class="tag">Data Cleaning</span>
+    <span class="tag">Visualization</span>
+  </div>
+
+  <!-- PROBLEM -->
+  <div class="section">
+    <h2>Problem Statement</h2>
+    <p>
+      Ride-hailing platforms like Uber face a critical operational challenge: <span class="highlight">How can driver supply be dynamically aligned with demand to reduce rider wait times and maximize revenue?</span>
+      This project analyzes ride patterns across time and location <span class="highlight">to identify high-impact opportunities for driver allocation, surge pricing, and operational efficiency.</span>
+    </p>
+  </div>
+
+  <!-- DATASET -->
+  <div class="section">
+    <h2>Dataset</h2>
+    <p>
+      The dataset contains Uber Pickups data in New York City including timestamp, dispatch base, and pickup points.
+      Data cleaning was performed to standardize time formats.
+    </p>
+  </div>
+
+  <!-- APPROACH -->
+  <div class="section">
+    <h2>Approach</h2>
+    <p>
+      - Merged multiple datasets <br>
+      - Converted timestamps into structured features - Hour, Day, Weekday <br>
+      - Cleaned and validated ~1.2M records <br>
+      - Analyzed demand patterns hourly, daily and by location <br>
+      - Built visualizations to identify peak demand <br>
+    </p>
+  </div>
+
+  <!-- VISUAL 1 -->
+  <div class="section">
+    <h2>Demand by Hour</h2>
+    <p>Identifying peak hours with high demand.</p>
+    <div class="visual-box">
+      <img src="../images/projects/ride-hailing/demand-by-hour.png" alt="Demand by Hour">
+    </div>
+  </div>
+
+  <!-- VISUAL 2 -->
+  <div class="section">
+    <h2>Demand by Day</h2>
+    <p>Comparing number of bookings across different days.</p>
+    <div class="visual-box">
+      <img src="../images/projects/ride-hailing/demand-by-day.png" alt="Demand by Day">
+    </div>
+  </div>
+
+  <!-- VISUAL 3 -->
+  <div class="section">
+    <h2>Pickup Point Analysis</h2>
+    <p>Understanding demand patterns across pickup locations.</p>
+    <div class="visual-box">
+      <img src="../images/projects/ride-hailing/location-density.png" alt="Pickup Analysis">
+    </div>
+  </div>
+
+  <!-- INSIGHTS -->
+  <div class="section">
+    <h2>Key Insights</h2>
+    <p>
+      - Bimodal Demand Patterns: Demand peaks at <span class="highlight">6-9 AM & 4-8 PM</span> indicating commute behavior <br>
+      - Friday shows extended peak from 5PM to late night and demand spills into early Saturday hours. Indicates work commute + Social activity <br>
+      - Strong clustering in central NYC (Manhattan region) <br>
+      - Spatial demand concentration indicates directional flow patterns that can be optimized for driver allocation and surge pricing <br>
+    </p>
+  </div>
+
+  <!-- BUSINESS IMPACT -->
+  <div class="section">
+    <h2>Business Recommendations</h2>
+    <p>
+      - Increase driver allocation 45-60 minutes before peak demand hours <br>
+      - Introduce surge incentives in high-demand zones <br>
+      - Focus on weekday commute windows and nightlife zones <br>
+      - Concentrate drivers in high-density zones during mornings and dynamically redistribute outward in evenings <br>
+    </p>
+  </div>
+
+  <!-- GITHUB -->
+  <a href="https://github.com/TPaul-BA/ride-hailing-demand-analysis/blob/main/notebooks/eda.ipynb" target="_blank" class="github-btn">
+    View Full Code on GitHub
+  </a>
+
+</div>
+
+</body>
+</html>

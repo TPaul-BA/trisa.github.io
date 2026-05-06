@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume | Trisa Paul</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1, h2 {
+  color: #ffbd39;
+}
+
+p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.split {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 40px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill-box span {
+  display: inline-block;
+  background: #333;
+  padding: 6px 10px;
+  margin: 4px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* EDUCATION */
+.edu-item {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* ACCORDION */
+.accordion-item {
+  border-left: 2px solid #333;
+  margin-bottom: 15px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 12px 15px;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header:hover {
+  background: #222;
+}
+
+.accordion-title {
+  font-size: 16px;
+}
+
+.accordion-date {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.accordion-icon {
+  font-size: 18px;
+  color: #ffbd39;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 20px;
+}
+
+.active .accordion-content {
+  display: block;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* PROJECTS */
+.project-box {
+  background: #1a1a1a;
+  padding: 15px;
+  border-left: 4px solid #ffbd39;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* FREELANCE */
+.freelance-box {
+  background: #1a1a1a;
+  padding: 12px;
+  border-left: 3px solid #ffbd39;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.back {
+  color: #ffbd39;
+  text-decoration: none;
+}
+
+/* BUTTON */
+.download-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 15px;
+  background: #ffbd39;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.back {
+  color: #ffbd39;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back">← Back to Portfolio</a>
+
+<h1>Resume</h1>
+
+<!-- SUMMARY -->
+<div class="section">
+<h2>Summary</h2>
+<p>
+Data Analyst transitioning from a sales background with 3+ years of experience in revenue-driven roles.
+Skilled in SQL, Python, and BI tools to analyze business data, identify trends, and support data-driven decision making.
+</p>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+<h2>Skills</h2>
+
+<div class="skills-grid">
+<div class="skill-box">
+<strong>Data Analysis</strong><br>
+<span>SQL</span><span>Python</span><span>Pandas</span>
+</div>
+
+<div class="skill-box">
+<strong>Visualization</strong><br>
+<span>Power BI</span><span>Tableau</span>
+</div>
+
+<div class="skill-box">
+<strong>Analytics</strong><br>
+<span>EDA</span><span>Data Cleaning</span><span>Business Analysis</span>
+</div>
+
+<div class="skill-box">
+<strong>Tools</strong><br>
+<span>Excel</span><span>Google Sheets</span><span>Google Analytics</span>
+</div>
+</div>
+</div>
+
+<!-- EXPERIENCE + EDUCATION -->
+<div class="section split">
+
+<!-- EXPERIENCE -->
+<div>
+<h2>Experience</h2>
+
+<div class="accordion-item">
+<div class="accordion-header">
+<div>
+<div class="accordion-title">MIS & Market Research Analyst</div>
+<div class="accordion-date">Marker Resources | Jun 2024 – Aug 2025 | Remote</div>
+</div>
+<div class="accordion-icon">+</div>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Analyzed sales and dealer performance data using Google Sheets and BI dashboards to identify revenue trends and performance gaps.</li>
+<li>Automated 4+ recurring reporting workflows, improving reporting efficiency and reducing manual effort.</li>
+<li>Conducted market and competitor analysis to support strategic decision-making.</li>
+<li>Ensured data accuracy and consistency across reporting systems.</li>
+<li>Generated insights on customer behavior and dealer performance to optimize sales processes.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header">
+<div>
+<div class="accordion-title">Business Analyst Intern</div>
+<div class="accordion-date">Teqfocus | Oct 2024 – Feb 2025 | Remote</div>
+</div>
+<div class="accordion-icon">+</div>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Built 2+ interactive dashboards using Tableau and Looker to track multi-channel content and website performance.</li>
+<li>Integrated Salesforce data into dashboards to generate real-time business insights.</li>
+<li>Performed comparative analysis of SEO tools to support platform selection decisions.</li>
+<li>Developed business reports (BRD, QBR) to improve reporting clarity and tracking.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header">
+<div>
+<div class="accordion-title">Inside Sales Representative</div>
+<div class="accordion-date">Teqfocus | Dec 2022 – Feb 2024 | Remote</div>
+</div>
+<div class="accordion-icon">+</div>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Managed B2B sales pipeline for Salesforce, Tableau, and QuickSight solutions across multiple regions.</li>
+<li>Improved lead conversion through targeted prospect engagement and CRM optimization.</li>
+<li>Collaborated with internal teams to align customer requirements with business solutions.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header">
+<div>
+<div class="accordion-title">Sales Executive</div>
+<div class="accordion-date">Pixis | Mar 2022 – Dec 2022 | Bengaluru</div>
+</div>
+<div class="accordion-icon">+</div>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Generated and qualified leads through market analysis and prospecting.</li>
+<li>Delivered product demos, sales pitches, and proposals to drive conversions.</li>
+<li>Consistently exceeded monthly sales targets while maintaining strong client relationships.</li>
+<li>Improved sales processes by implementing structured follow-ups and engagement strategies.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header">
+<div>
+<div class="accordion-title">Marketing Executive</div>
+<div class="accordion-date">Vinyas Innovative Technologies | Dec 2020 – Feb 2022 | Mysore</div>
+</div>
+<div class="accordion-icon">+</div>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Executed lead generation campaigns through email marketing and outreach strategies.</li>
+<li>Conducted market research to support business development and targeting.</li>
+<li>Developed marketing materials including reports, brochures, and campaign assets.</li>
+<li>Collaborated with cross-functional teams to execute campaigns and ensure timely delivery.</li>
+<li>Monitored branding consistency across marketing channels and communications.</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<!-- EDUCATION -->
+<div>
+<h2>Education</h2>
+
+<div class="edu-item">
+<strong>PGD in Business Analysis</strong><br>
+Symbiosis International University<br>
+2025 – Present
+</div>
+
+<div class="edu-item">
+<strong>e-MDP in Advanced Analytics</strong><br>
+IIM Kozhikode<br>
+2024 – 2025
+</div>
+
+<div class="edu-item">
+<strong>MBA</strong><br>
+Alliance University<br>
+2019 – 2021
+</div>
+
+<div class="edu-item">
+<strong>B.Com</strong><br>
+Mahatma Gandhi University<br>
+2015 – 2018
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+<h2>Projects</h2>
+
+<div class="project-box">
+Ride-Hailing Demand Analysis → Demand-supply insights
+</div>
+
+<div class="project-box">
+Netflix Content Analysis → Content trends & patterns
+</div>
+
+<div class="project-box">
+Retail Sales SQL Analysis → Customer & sales insights
+</div>
+
+</div>
+
+<!-- FREELANCE -->
+<div class="section">
+<h2>Freelance & Training</h2>
+
+<div class="freelance-box">
+Conducted 3-day Tableau workshop as industry expert
+</div>
+
+<div class="freelance-box">
+Built sales analytics dashboard (confidential project using SQL, Python, Power BI)
+</div>
+
+</div>
+
+<a href="assets/Trisa_Paul_Resume.pdf" download class="download-btn">
+Download Resume
+</a>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".accordion-item");
+
+  items.forEach(item => {
+    const header = item.querySelector(".accordion-header");
+
+    header.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      // close all
+      items.forEach(i => {
+        i.classList.remove("active");
+        i.querySelector(".accordion-icon").textContent = "+";
+      });
+
+      // open current if it was closed
+      if (!isActive) {
+        item.classList.add("active");
+        item.querySelector(".accordion-icon").textContent = "-";
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

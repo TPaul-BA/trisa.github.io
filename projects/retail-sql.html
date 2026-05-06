@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retail Sales SQL Analysis | Trisa Paul</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      color: #ffbd39;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.7;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #333;
+      padding: 6px 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .code-block {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 13px;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .back {
+      margin-bottom: 20px;
+      display: inline-block;
+      color: #ffbd39;
+      text-decoration: none;
+    }
+
+    .github-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #ffbd39;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .insight-box {
+      background: #1a1a1a;
+      padding: 15px;
+      border-left: 4px solid #ffbd39;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <a href="../index.html#project-section" class="back">← Back to Projects</a>
+
+  <h1>Retail Sales Analysis (SQL)</h1>
+
+  <div class="section">
+    <span class="tag">SQL Server</span>
+    <span class="tag">EDA</span>
+    <span class="tag">Business Analysis</span>
+  </div>
+
+  <!-- PROBLEM -->
+  <div class="section">
+    <h2>Problem Statement</h2>
+    <p>
+      Retail businesses generate large volumes of transactional data, but without structured analysis,
+      it becomes difficult to extract meaningful insights.
+    </p>
+    <p>
+      This project focuses on analyzing <span class="highlight">sales performance, customer behavior, and operational trends</span>
+      using SQL to support data-driven decision making.
+    </p>
+  </div>
+
+  <!-- DATASET -->
+  <div class="section">
+    <h2>Dataset & Structure</h2>
+    <p>
+      The dataset consists of transactional retail data including customer demographics,
+      product categories, and sales values.
+    </p>
+
+    <div class="code-block">
+        CREATE TABLE retail_sales (  
+            transactions_id INT PRIMARY KEY, 
+            sale_date DATE,  
+            sale_time TIME,  
+            customer_id INT,  
+            gender VARCHAR(10),  
+            age INT,  
+            category VARCHAR(35),  
+            quantity INT,  
+            price_per_unit FLOAT,  
+            cogs FLOAT,  
+            total_sale FLOAT
+        );
+    </div>
+  </div>
+
+  <!-- DATA CLEANING -->
+  <div class="section">
+    <h2>Data Cleaning</h2>
+    <p>
+      Ensured data quality by identifying and removing records with missing values across key fields.
+    </p>
+
+    <div class="insight-box">
+      Removed 3 records with NULL values to maintain data consistency and accuracy.
+    </div>
+  </div>
+
+  <!-- ANALYSIS -->
+  <div class="section">
+    <h2>Key Analysis Performed</h2>
+
+    <p class="highlight">Sales Performance Analysis</p>
+    <ul>
+      <li>Total transactions and revenue trends</li>
+      <li>Category-wise sales performance</li>
+    </ul>
+
+    <p class="highlight">Customer Analysis</p>
+    <ul>
+      <li>Unique customer count</li>
+      <li>Top 5 customers by revenue</li>
+      <li>Customer demographics (age, gender)</li>
+    </ul>
+
+    <p class="highlight">Operational Insights</p>
+    <ul>
+      <li>High-value transactions (>1000 sales)</li>
+      <li>Best-performing months using window functions</li>
+      <li>Sales distribution across time of day (Morning/Afternoon/Evening)</li>
+    </ul>
+  </div>
+
+  <!-- SQL DEPTH -->
+  <div class="section">
+    <h2>SQL Techniques Used</h2>
+    <ul>
+      <li>Aggregations (SUM, COUNT, AVG)</li>
+      <li>Filtering & conditional logic (WHERE, CASE)</li>
+      <li>Window functions (RANK)</li>
+      <li>Subqueries and CTEs</li>
+      <li>Date & time functions</li>
+    </ul>
+  </div>
+
+  <!-- INSIGHTS -->
+  <div class="section">
+    <h2>Key Insights</h2>
+
+    <div class="insight-box">
+      Certain product categories consistently drive higher sales volume.
+    </div>
+
+    <div class="insight-box">
+      A small group of customers contributes disproportionately to total revenue.
+    </div>
+
+    <div class="insight-box">
+      Sales activity peaks during specific times of the day, indicating operational optimization opportunities.
+    </div>
+
+  </div>
+
+  <!-- BUSINESS IMPACT -->
+  <div class="section">
+    <h2>Business Implications</h2>
+    <p>
+      The analysis provides a foundation for:
+    </p>
+    <ul>
+      <li>Customer targeting and retention strategies</li>
+      <li>Inventory and category optimization</li>
+      <li>Time-based staffing and operational planning</li>
+    </ul>
+  </div>
+
+  <!-- FUTURE -->
+  <div class="section">
+    <h2>Future Enhancements</h2>
+    <ul>
+      <li>Build dashboards in Power BI</li>
+      <li>Add indexing for query optimization</li>
+      <li>Extend analysis to profitability using COGS</li>
+    </ul>
+  </div>
+
+  <!-- GITHUB -->
+  <a href="https://github.com/TPaul-BA/Retail_sales_sql_p1/blob/main/SQL%20Retail%20Sales%20Analysis.sql" target="_blank" class="github-btn">
+    View Full SQL Project on GitHub
+  </a>
+
+</div>
+
+</body>
+</html>
