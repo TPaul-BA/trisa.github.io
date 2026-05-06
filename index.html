@@ -27,6 +27,10 @@
   font-weight: 600;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+}
+
 	/* ABOUT */
 .about-mf .box-shadow-full {
 padding-top: 4rem;
@@ -50,6 +54,12 @@ margin-left: 10px;
 .hero .text { max-width: 600px; }
 .hero-buttons a { margin-right: 12px; }
 .cred-line { color: #ffbd39; font-weight: 600; }
+
+.hero-img {
+  background: url('images/bg_1.png') no-repeat center center;
+  background-size: contain;
+  min-height: 400px;
+}
 
 /* MOBILE HERO FIX */
 @media (max-width: 768px) {
@@ -280,9 +290,11 @@ transform: scale(1.1);
         </div>
       </div>
 
-      <div class="col-md-6">
+      <!-- <div class="col-md-6">
         <img src="images/bg_1.png" class="img-fluid">
-      </div>
+      </div> -->
+
+      <div class="col-md-6 hero-img"></div>
 
     </div>
   </div>
