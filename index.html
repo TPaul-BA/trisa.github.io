@@ -9,10 +9,14 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+html, body {
+  height: 100%;
+}
 
-/* NAVIGATION */
+  /* NAVIGATION */
 .navbar .nav-link {
   color: #ccc;
   transition: 0.3s;
@@ -57,7 +61,7 @@ margin-left: 10px;
 
 .hero-img {
   background: url('images/bg_1.png') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   min-height: 400px;
 }
 
@@ -210,10 +214,106 @@ transform: scale(1.1);
   color: #ffbd39;
 }
 
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-float {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  z-index: 10;
+}
+
+.social-float a {
+  width: 45px;
+  height: 45px;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.social-float a:hover {
+  background: #ffbd39;
+  color: #000;
+  transform: scale(1.1);
+} 
+
+/* FULL WIDTH BAR */
+.social-bar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+
+  background: rgba(255, 255, 255, 0.04); /* light-dark strip */
+  backdrop-filter: blur(6px);
+  padding: 4px 20px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* INNER CONTAINER */
+.social-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* ICON STYLE */
+.social-container a {
+  width: 28px;
+  height: 28px;
+
+  color: #aaa;
+
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.social-container a:hover {
+  color: #ffbd39;
+  transform: translateY(-2px)
+}
+
+body {
+  padding-bottom: 60px;
+}
+
+#contact-section {
+  padding: 60px 0 20px; /* reduce bottom padding */
+  margin-bottom: 0;
+}
+
 </style>
 </head>
 
 <body>
+
+<div class="page-wrapper">
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -449,46 +549,44 @@ transform: scale(1.1);
 </section>
 
 <!-- CONTACT -->
-<!-- CONTACT -->
 <section id="contact-section" class="ftco-section">
   <div class="container text-center">
-
+    
     <!-- HEADING -->
-    <div class="mb-5">
+    <div class="mb-3">
       <h2>Contact</h2>
       <p style="color:#aaa; max-width:600px; margin:auto;">
         Open to data analyst roles, freelance projects, and collaborations.
         Feel free to reach out.
       </p>
     </div>
-
+    
     <!-- PRIMARY CONTACT CARDS -->
-    <div class="row justify-content-center mb-5">
-
+    <div class="row justify-content-center mb-3">
       <!-- EMAIL -->
       <div class="col-md-4 mb-4">
         <div class="contact-card">
           <h4>Email</h4>
           <p>
-            <a href="mailto:trisapaulm@hotmail.com">
+            <a href="mailto:trisapaulm@hotmail.com">  
               trisapaulm@hotmail.com
             </a>
           </p>
         </div>
       </div>
-
+      
       <!-- PHONE -->
       <div class="col-md-4 mb-4">
         <div class="contact-card">
           <h4>Phone</h4>
           <p>
-            <a href="tel:+919645116464">
+            <a href="tel:+919645116464">  
               +91 9645116464
             </a>
           </p>
         </div>
       </div>
-
+      
       <!-- LOCATION -->
       <div class="col-md-4 mb-4">
         <div class="contact-card">
@@ -496,31 +594,36 @@ transform: scale(1.1);
           <p>Kerala, India</p>
         </div>
       </div>
-
+      
     </div>
-
+    
     <!-- MAIN CTA -->
-    <div class="mb-5">
+    <div class="mb-3">
       <a href="https://forms.gle/TcodVNHJJfbXnqaK6" target="_blank" class="btn btn-primary py-3 px-5">
         Send a Message
       </a>
     </div>
-
+    
     <!-- SOCIAL PROOF -->
-    <div>
-      <p style="color:#aaa;">Find me on</p>
-
-      <a href="https://www.linkedin.com/in/trisampaulmba/" target="_blank" class="social-link">
-        LinkedIn
-      </a>
-
-      <span style="margin:0 10px;">|</span>
-
-      <a href="https://github.com/TPaul-BA" target="_blank" class="social-link">
-        GitHub
-      </a>
+    <div style = "margin-bottom: 10px;">
+      <p style="color:#aaa; margin-bottom: 5px;">Find me on</p>
+      <a href="https://www.linkedin.com/in/trisampaulmba/" target="_blank" class="social-link">LinkedIn</a>  
+      <span style="margin:0 10px;">|</span>      
+      <a href="https://github.com/TPaul-BA" target="_blank" class="social-link">GitHub</a>
     </div>
-
+  
+  </div>
+  
+  <!-- SOCIAL BAR -->
+  <div class="social-bar mt-4">
+    <div class = "container d-flex justify-content-end">
+      <div class="social-container">
+        <a href="https://www.linkedin.com/in/trisampaulmba/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/TPaul-BA" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.credly.com/users/trisa-paul-malayampuram/badges#credly" target="_blank"><i class="fas fa-certificate"></i></a>
+        <a href="mailto:trisapaulm@hotmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
   </div>
 </section>
 
